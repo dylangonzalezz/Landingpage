@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+
+.title {
+    &__container {
+        background-color: rgb(50, 50, 50);
+        height: 100vh;
+        width: auto;
+        position: relative;
+        background-size: cover;
+        background-image: url("../assets/ContentMedia/Media-Title.jpeg");
+        background-attachment: fixed;
+        min-height: 100vh;
+        box-sizing: border-box;
+        transform-style: inherit;
+    }
+    &__header {
+        text-align: center;
+        margin: 0;
+        padding-top: 40vh;
+        color: whitesmoke;
+        font-size: 8em;
+        font-family: 'Special Elite', Consolas;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}
+
+@media (max-width: $grid-sm) {
+    .title__header {
+        font-size: 15vw;
+    }
+}

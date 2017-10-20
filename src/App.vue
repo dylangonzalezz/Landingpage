@@ -26,6 +26,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: rgb(65, 65, 65);
   position: relative;
+  height: 100%;
 }
 body{
     margin: 0px;

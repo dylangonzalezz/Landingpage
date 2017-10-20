@@ -53,10 +53,8 @@ const mutations = {
 
 const actions = {
     asyncChangeGithub({ commit }) {
-        var changeGithub = new Promise(function(resolve, reject) {
             var getRequest = axios.get('https://api.github.com/users/dylangonzalezz');
             commit('changeGithub', getRequest);
-        });
     }
 };
 

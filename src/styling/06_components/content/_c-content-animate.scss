@@ -1,0 +1,44 @@
+@keyframes slide-in-right {
+    from {
+        transform: translateX(20px);
+    } to {
+          transform: translateX(0px);
+      }
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-20px);
+    } to {
+          transform: translateX(0px);
+      }
+}
+
+@keyframes slide-in-bottom {
+    from {
+        transform: translateY(20px);
+    } to {
+          transform: translateY(0px);
+      }
+}
+
+.slidein-right {
+    opacity: 1;
+    transition: opacity 1s;
+    animation: slide-in-right 1s ease-out forwards;
+
+    @media (max-width: $grid-lg) {
+        animation: slide-in-bottom 1s ease-out forwards;
+    }
+}
+
+.slidein-left {
+    opacity: 1;
+    transition: opacity 1s;
+    animation: slide-in-left 1s ease-out forwards;
+
+    @media (max-width: $grid-lg) {
+        animation: slide-in-bottom 1s ease-out forwards;
+    }
+
+}

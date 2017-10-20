@@ -35,7 +35,31 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
-      }
+      },
+        {
+            test: /\.s?css$/,
+            include: config.srcPath,
+            use: ExtractTextPlugin.extract({
+                use: [
+                    `css-loader?sourceMap`,
+                    {
+                        loader: `postcss-loader`,
+                        options: {
+                            sourceMap: true,
+                            plugins: [
+                                require(`autoprefixer`)(
+                                    {
+                                        browsers: [`last 2 versions`],
+                                    }
+                                )
+                            ]
+                        }
+                    },
+                    `sass-loader?sourceMap`,
+                ],
+                fallback: `style-loader`,
+            })
+        },
     ]
   },
   resolve: {

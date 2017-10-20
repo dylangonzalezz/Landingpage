@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
+
+.contactform {
+    background-color: #161616;
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    height: 100%;
+
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)  {
+        height: 100%;
+    }
+
+    @media (max-width: $grid-sm) {
+        padding-top: 100px;
+        height: auto;
+    }
+
+    &__container {
+        width: 500px;
+        margin: 0 auto;
+        padding-bottom: 60px;
+        height: 100%;
+
+        @media (max-width: $grid-sm) {
+            width: 100%;
+        }
+
+    }
+
+    &__title {
+        font-family: 'Libre Barcode 128 Text', Consolas;
+        text-align: center;
+        margin-bottom: 70px;
+        font-size: 5em;
+
+        @media (max-width: $grid-sm) {
+            margin: 50px 0;
+        }
+
+    }
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        font-size: 3em;
+        font-weight: 100;
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    &__button {
+        &--submit {
+            display: block;
+            margin: 0 auto;
+            font-style: italic;
+        }
+    }
+
+    &__input {
+        background-color: #161616;
+        border: none;
+        border-bottom: 1px solid #3a3a3a;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 30px 0;
+        color: antiquewhite;
+
+        &--textarea {
+            max-width: 100%;
+        }
+
+        &:focus {
+            outline-color: transparent;
+            outline-style: none;
+            box-shadow: none;
+            border-bottom-color: antiquewhite;
+        }
+
+        &::-webkit-input-placeholder {
+            color: #333333;
+        }
+
+        &::-moz-placeholder {
+            color: #333333;
+        }
+
+        &:-ms-input-placeholder {
+            color: #333333;
+        }
+
+        &:-moz-placeholder {
+            color: #333333;
+        }
+
+    }
+}
