@@ -1,12 +1,30 @@
-.c-spinner {
-    width: 40px;
-    height: 40px;
-    margin: 100px auto;
-    background-color: #333;
+.spinner {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 
-    border-radius: 100%;
-    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-    animation: sk-scaleout 1.0s infinite ease-in-out;
+    &--dark {
+        width: 40px;
+        height: 40px;
+        margin: 100px auto;
+        background-color: #333;
+        border-radius: 100%;
+        -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+        animation: sk-scaleout 1.0s infinite ease-in-out;
+    }
+
+    &--white {
+        width: 40px;
+        height: 40px;
+        margin: 100px auto;
+        background-color: white;
+        border-radius: 100%;
+        -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+        animation: sk-scaleout 1.0s infinite ease-in-out;
+    }
 }
 
 @-webkit-keyframes sk-scaleout {

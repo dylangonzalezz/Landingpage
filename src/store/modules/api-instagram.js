@@ -1,16 +1,15 @@
 /**
  * Created by dylangonzalez on 22.09.17.
  */
-import axios from 'axios';
 import instafeed from 'instafeed.js';
 
 const state = {
-    instagramLoading: false,
+    instagramLoading1: false,
+    instagramLoading2: false,
+    instagramLoading3: false,
     instafeedid1: 'image1',
     instafeedid2: 'image2',
     instafeedid3: 'image3',
-    lastimage2: null,
-    lastimage3: null,
 }
 
 const methods = {
@@ -19,47 +18,22 @@ const methods = {
         return  '<div class="content__imagelayout">' +
                     '<img src="{{image}}" class="content__image">' +
                 '</div>';
-    },
-    // uselastimage2(image) {
-    //     console.log(image.created_time);
-    //     console.log(state.lastimage2)
-    //     if(image.created_time > state.lastimage2) {
-    //         console.log("true");
-    //         state.lastimage2 = image.created_time;
-    //         return "wewe";
-    //     } else {
-    //         console.log("false");
-    //         state.lastimage2 = image.created_time;
-    //         return image.id;
-    //     }
-    // },
-    // uselastimage3(image) {
-    //     if(image.created_time > state.lastimage3) {
-    //         state.lastimage3 = image.created_time;
-    //         return 'nothing';
-    //     } else {
-    //         state.lastimage3 = image.created_time;
-    //         return image.id;
-    //     }
-    // }
+    }
 }
 
 const getters = {
-    getInstagram(state) {
-        return state.instagram;
+    getInstagramLoading1(state) {
+        return state.instagramLoading1;
     },
+    getInstagramLoading2(state) {
+        return state.instagramLoading2;
+    },
+    getInstagramLoading3(state) {
+        return state.instagramLoading3;
+    }
 }
 
 const mutations = {
-    changeInstagram: (state, payload) => {
-        // var load = new Promise (function(resolve, reject) {
-        // Do async action, return " kek"
-        // });
-        //
-        // for (i = 0; i < payload.length; i++) {
-        //
-        // }
-    }
 }
 
 const actions = {
@@ -72,6 +46,10 @@ const actions = {
             accessToken:"231412545.177843c.436e3207739d4e2781f5d663578cae31",
             template: methods.createTemplate(),
             target: state.instafeedid1,
+            error: function(error){
+                console.log(error);
+                console.log("Kek");
+            }
             // filter: function() {
             //     return "weww";
             // }
@@ -111,7 +89,7 @@ const actions = {
             // }
         });
         var feeds = [feed1, feed2, feed3];
-        // commit('changeInstagram', feeds);
+
         for (var i = 0; i < feeds.length; i++) {
             feeds[i].run();
         }
