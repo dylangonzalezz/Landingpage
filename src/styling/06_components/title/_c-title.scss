@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Special+Elite');
-
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
 .title {
     &__container {
         background-color: rgb(50, 50, 50);
@@ -7,7 +6,7 @@
         width: auto;
         position: relative;
         background-size: cover;
-        background-image: url("../assets/ContentMedia/Media-Title.jpeg");
+        background-image: url("../assets/ContentMedia/Media-Title.jpg");
         background-attachment: fixed;
         min-height: 100vh;
         box-sizing: border-box;
@@ -18,8 +17,8 @@
         margin: 0;
         padding-top: 40vh;
         color: whitesmoke;
-        font-size: 8em;
-        font-family: 'Special Elite', Consolas;
+        font-size: 12em;
+        font-family: 'Libre Barcode 128 Text', Consolas;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;

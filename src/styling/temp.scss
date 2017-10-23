@@ -24,6 +24,10 @@ $gridInfo: true;
 
         &::before,
         &::after {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
             display: flex;
             position: fixed;
             bottom: 0;
