@@ -3,7 +3,7 @@
         <div class="content__container content__container--right">
             <div class="content__textcontainer">
                 <div class="content__text">
-                    <h1 class="content-typography__large">"Hey B whats poppin?"</h1>
+                    <h1 class="content-typography__large">Whats poppin?</h1>
                 </div>
             </div>
             <div class="content__imagecontainer" id="image1">
@@ -15,16 +15,7 @@
             <div class="content__textcontainer">
                 <div class="content__text">
                     <p class="content-typography__text">
-                        Everyday im Hustelin
-                        Everyday im Hustelin
-                        Everyday im Hustelin
-                        Everyday im Hustelin
-                        Everyday im Hustelin
-                        Everyday im Hustelin
-                        Everyday im Hustelin
-                        Everyday im Hustelin
-                        Everyday im Hustelin
-                        Everyday im Hustelin
+                        I make stuff n things
                     </p>
                 </div>
             </div>
@@ -32,7 +23,9 @@
         <div class="content__container content__container--right">
             <div class="content__textcontainer">
                 <div class="content__text">
-                    <p class="content-typography__text">We ballin</p>
+                    <p class="content-typography__text">
+                        check dis
+                    </p>
                 </div>
             </div>
             <div class="content__imagecontainer" id="image3">
