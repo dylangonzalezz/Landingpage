@@ -32,14 +32,12 @@ const mutations = {
     changeGithub: (state, getRequest) => {
         state.githubLoading = true;
         getRequest.then(function (response) {
-            console.log(response["data"]);
             state.githubName = response["data"]["login"];
             state.githubAvatar = response["data"]["avatar_url"];
             state.githubCompany = response["data"]["company"];
             state.githubLocation = response["data"]["location"];
             state.githubLoading = false;
         }).catch(function (error) {
-            console.log(error);
             state.githubName = "Error :(";
             state.githubAvatar = "Error ;C";
             state.githubCompany = "Error D:";
