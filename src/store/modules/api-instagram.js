@@ -8,6 +8,7 @@ const state = {
     instafeedid1: 'image1',
     instafeedid2: 'image2',
     instafeedid3: 'image3',
+    instafeedid4: 'image4',
     lastimage2: null,
     lastimage3: null,
 }
@@ -61,7 +62,17 @@ const actions = {
             template: methods.createTemplate(),
             target: state.instafeedid3,
         });
-        var feeds = [feed1, feed2, feed3];
+        var feed4 = new instafeed({
+            get:"user",
+            limit:4,
+            sortBy: 'least-recent',
+            resolution:"standard_resolution",
+            userId:231412545,
+            accessToken:"231412545.177843c.436e3207739d4e2781f5d663578cae31",
+            template: methods.createTemplate(),
+            target: state.instafeedid4,
+        });
+        var feeds = [feed1, feed2, feed3, feed4];
         for (var i = 0; i < feeds.length; i++) {
             feeds[i].run();
         }

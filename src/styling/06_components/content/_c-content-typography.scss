@@ -7,4 +7,19 @@
     &__text {
 
     }
+
+    &__link {
+        color: $color-blue;
+        text-decoration: underline;
+    }
+
+    &__buylink {
+        font-size:2em;
+        text-decoration: underline;
+    }
+
+    &__center{
+        text-align: center;
+    }
+
 }

@@ -14,7 +14,7 @@
           <div>
             <div class="github__titlecontainer">
               <img src="../assets/icons/github.png" class="col github__icon"/>
-              <h3 class="github__title">Github stats</h3>
+              <h3 class="github__title">Some Github stats</h3>
             </div>
             <div class="row github__stats">
             <div class="col-sm-6"><b>Username:</b></div>

@@ -44,6 +44,10 @@
                         link += (key.charAt(ltr))
                     }
                 }
+                if(this.name == "") {
+                    return "mailto:" + link + "?subject=" + this.subject + "&body=" + this.message;
+                }
+
                 return "mailto:" + link + "?subject=" + this.subject + "&body=" + this.message + "%0D%0A%0D%0A%0D%0ASincerely%0D%0A%0D%0A-" + this.name;
             }
         }
