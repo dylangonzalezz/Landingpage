@@ -82,15 +82,6 @@
                 this.$store.dispatch('asyncChangeInstagram');
             },
         },
-//        computed: {
-//            ...mapGetters([
-//                'getGithubName',
-//                'getGithubAvatar',
-//                'getGithubCompany',
-//                'getGithubLocation',
-//                'getGithubLoading'
-//            ]),
-//        },
         mounted: function() {
             this.loadInstagram();
         }

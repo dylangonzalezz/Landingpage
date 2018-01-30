@@ -2,8 +2,6 @@
  * Created by dylangonzalez on 22.09.17.
  */
 import axios from 'axios'
-import { getGithubdata } from '../../helpers/api-helper'
-
 const state = {
     githubName: '',
     githubAvatar: '',

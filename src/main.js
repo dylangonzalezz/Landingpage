@@ -6,7 +6,6 @@ import './styling/styles.scss'
 
 Vue.config.productionTip = false
 
-
 var vm = new Vue({
   el: '#app',
   router,

@@ -42,29 +42,4 @@ body{
     transition: opacity 2s;
     /*animation: slide-in 2s ease-out forwards;*/
 }
-/*.slide-leave {
-  opacity: 1;
-}
-
-.slide-leave-active {
-    !*animation: slide-out 1s ease-out forwards;*!
-    transition: opacity 1s;
-    opacity: 0;
-}*/
-
-/*@keyframes slide-in {
-    from {
-        transform: translateX(20px);
-    } to {
-          transform: translateX(0px);
-      }
-}
-
-@keyframes slide-out {
-    from {
-        transform: translateX(0px);
-    } to {
-          transform: translateX(20px);
-      }
-}*/
 </style>
