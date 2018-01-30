@@ -48,7 +48,10 @@
         background-size: 100% auto;
         background-repeat: no-repeat;
         filter: grayscale(100%);
-        position: absolute;
+        //position: absolute;
+        // SAFARI
+        //position: inherit;
+        //position: relative;
 
         &--hover1{
             position: absolute;
@@ -80,6 +83,9 @@
             opacity: 0;
             z-index:4;
             padding: 0;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
             &:hover{
                 opacity: 1;
             }

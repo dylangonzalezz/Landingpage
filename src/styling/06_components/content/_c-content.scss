@@ -33,7 +33,7 @@
 
     &__imagecontainer {
         position: relative;
-        width: 30%;
+        width: 100%;
         background-color: #FFFFFF;
         opacity: 0;
 
@@ -58,7 +58,7 @@
     &__textcontainer {
         position: relative;
         background-color: #FFFFFF;
-        width: 30%;
+        width: 100%;
 
         @media (max-width: $grid-lg) {
             width: 100%;
@@ -67,7 +67,7 @@
     }
 
     &__imagelayout {
-        height: 700px;
+        height: auto;
         width: auto;
         background-color: #FFFFFF;
         position: absolute;

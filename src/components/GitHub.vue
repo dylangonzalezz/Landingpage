@@ -7,7 +7,7 @@
             <div class="github__avatar--hover2" :style="githubAvatar()"></div>
           </div>
           <div class="github__avatar" :style="githubAvatar()"></div>
-          </div>
+        </div>
       </div>
       <div class="github__container">
         <div class="github__contentcontainer">
