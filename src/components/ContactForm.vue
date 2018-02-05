@@ -2,14 +2,14 @@
     <div class="contactform">
         <h2 class="contactform__title">Let's work together</h2>
         <form class="contactform__container">
-            <div class="form-group">
-                <input type="text" class="form-control contactform__input" placeholder="Name" required v-model.lazy="name">
+            <div class="contactform__formgroup">
+                <input type="text" class="contactform__input" placeholder="Name" required v-model.lazy="name">
             </div>
-            <div class="form-group">
-                <input type="text" class="form-control contactform__input" placeholder="Subject" v-model.lazy="subject">
+            <div class="contactform__formgroup">
+                <input type="text" class="contactform__input" placeholder="Subject" v-model.lazy="subject">
             </div>
-            <div class="form-group">
-                <textarea class="form-control contactform__input contactform__input--textarea" placeholder="Message" required v-model.lazy="message"></textarea>
+            <div class="contactform__formgroup">
+                <textarea class="contactform__input contactform__input--textarea" placeholder="Message" required v-model.lazy="message"></textarea>
             </div>
             <a class="contactform__button--submit" v-bind:href="getMailtoLink()">Fire Away</a>
         </form>

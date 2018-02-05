@@ -16,17 +16,17 @@
               <img src="../assets/icons/github.png" class="col github__icon"/>
               <h3 class="github__title">Some Github stats</h3>
             </div>
-            <div class="row github__stats">
-            <div class="col-sm-6"><b>Username:</b></div>
-            <div class="col-sm-6">{{ getGithubName }}</div>
+            <div class="github__stats">
+              <div class="github__td"><b>Username:</b></div>
+              <div class="github__td">{{ getGithubName }}</div>
             </div>
-            <div class="row github__stats">
-            <div class="col-sm-6"><b>Location:</b></div>
-            <div class="col-sm-6">{{ getGithubLocation }}</div>
+            <div class="github__stats">
+              <div class="github__td"><b>Location:</b></div>
+              <div class="github__td">{{ getGithubLocation }}</div>
             </div>
-            <div class="row github__stats">
-            <div class="col-sm-6"><b>Company:</b></div>
-            <div class="col-sm-6">{{ getGithubCompany }}</div>
+            <div class="github__stats">
+              <div class="github__td"><b>Company:</b></div>
+              <div class="github__td">{{ getGithubCompany }}</div>
             </div>
           </div>
         </div>
