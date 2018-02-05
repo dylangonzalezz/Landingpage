@@ -5,6 +5,7 @@
     </transition>
     <router-view name="menu"></router-view>
     <router-view name="content"></router-view>
+    <router-view name="video"></router-view>
     <router-view name="github"></router-view>
     <transition appear name="slide" mode="out-in">
       <router-view name="contact"></router-view>

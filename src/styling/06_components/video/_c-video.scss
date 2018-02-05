@@ -1,0 +1,19 @@
+.video {
+    &__container{
+        background-color: black;
+        height: 100vh;
+        width: auto;
+        position: relative;
+        min-height: 100vh;
+        box-sizing: border-box;
+        transform-style: inherit;
+    }
+
+    &__player{
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        transform-style: inherit;
+        position: relative;
+    }
+}

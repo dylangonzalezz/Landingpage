@@ -6,6 +6,7 @@ import Menu from '../components/Menu'
 import GitHub from '../components/GitHub'
 import Content from '../components/Content'
 import Footer from '../components/Footer'
+import Video from '../components/Video'
 
 Vue.use(Router);
 
@@ -19,7 +20,8 @@ export default new Router({
         menu: Menu,
         github: GitHub,
         content: Content,
-        footer: Footer
+        footer: Footer,
+        video: Video
       }
     },
     {
@@ -33,7 +35,9 @@ export default new Router({
           default: Title,
           menu: Menu,
           github: GitHub,
-          content: Content
+          content: Content,
+          footer: Footer,
+          video: Video
       }
       }
   ]
