@@ -1,6 +1,6 @@
 <template>
     <div class="content">
-        <div class="content__container content__container--right">
+        <div class="content__container content__container--right content__shadow--top">
             <div class="content__textcontainer">
                 <div class="content__text">
                     <h1 class="content-typography__large">Whats poppin?</h1>
@@ -43,7 +43,7 @@
             <div class="content__imagecontainer" id="image3">
             </div>
         </div>
-        <div class="content__container content__container--left">
+        <div class="content__container content__container--left content__shadow--bottom">
             <div class="content__imagecontainer" id="image4">
             </div>
             <div class="content__textcontainer">
