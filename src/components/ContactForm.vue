@@ -1,55 +1,18 @@
 <template>
     <div class="contactform">
         <h2 class="contactform__title">Let's work together</h2>
-        <form class="contactform__container">
+        <form class="contactform__container" action="https://formspree.io/dylonskiawsome@gmail.com"
+              method="POST">
             <div class="contactform__formgroup">
-                <input type="text" class="contactform__input" placeholder="Name" required v-model.lazy="name">
+                <input type="Email" class="contactform__input" placeholder="Email" name="_replyto">
             </div>
             <div class="contactform__formgroup">
-                <input type="text" class="contactform__input" placeholder="Subject" v-model.lazy="subject">
+                <textarea class="contactform__input contactform__input--textarea" placeholder="Message"></textarea>
             </div>
-            <div class="contactform__formgroup">
-                <textarea class="contactform__input contactform__input--textarea" placeholder="Message" required v-model.lazy="message"></textarea>
-            </div>
-            <a class="contactform__button--submit" v-bind:href="getMailtoLink()">Fire Away</a>
+            <input class="contactform__button--submit" type="submit" value="Fire Away">
         </form>
         <router-link to="/">
             <button class="contactform__close">+</button>
         </router-link>
     </div>
 </template>
-
-<script>
-    export default {
-        data() {
-            return{
-                name: "",
-                subject: "",
-                message: "",
-            }
-        },
-        methods: {
-            getMailtoLink: function() {
-                var coded = "aZvKcFh1XbFKL9@2LX1v.5KL";
-                var key = "ix650qDJ2VFvPC7IenYyafbm1uo4RBEUGkWNMtzA9cjZXTgLslKHQr3pShdOw8";
-                var shift = coded.length;
-                var link = "";
-                for (var i = 0; i < coded.length; i++) {
-                    if (key.indexOf(coded.charAt(i))==-1) {
-                        var ltr = coded.charAt(i);
-                        link += (ltr)
-                    }
-                    else {
-                        var ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length;
-                        link += (key.charAt(ltr))
-                    }
-                }
-                if(this.name == "") {
-                    return "mailto:" + link + "?subject=" + this.subject + "&body=" + this.message;
-                }
-
-                return "mailto:" + link + "?subject=" + this.subject + "&body=" + this.message + "%0D%0A%0D%0A%0D%0ASincerely%0D%0A%0D%0A-" + this.name;
-            }
-        }
-    }
-</script>
