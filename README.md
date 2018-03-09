@@ -1,6 +1,8 @@
-# dylonski-landingpage
+# Dylonski-landingpage
 
-> A Landingpage project
+Code Repo for the Dylonski Landingpage
+
+Made and sustained by Dylonski
 
 ## Build Setup
 
