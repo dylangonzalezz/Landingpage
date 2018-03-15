@@ -10,6 +10,7 @@
         display: -webkit-flex;
         display: flex;
         justify-content: space-around;
+        -webkit-justify-content: space-around;
         margin-bottom: 200px;
 
         &--right {
@@ -35,7 +36,6 @@
         position: relative;
         width: 100%;
         background-color: #FFFFFF;
-        opacity: 0;
 
         @media (max-width: $grid-lg) {
             width: 100%;
@@ -52,6 +52,10 @@
             display: -ms-flexbox;
             display: -webkit-flex;
             display: flex;
+        }
+
+        &--no-opacity {
+            opacity: 0;
         }
     }
 
@@ -79,7 +83,9 @@
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
+        -webkit-justify-content: center;
         justify-content: center;
+        -webkit-align-items: center;
         align-items: center;
 
         @media (max-width: $grid-lg) {
