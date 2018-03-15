@@ -1,0 +1,123 @@
+.gallery {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    &__title {
+        font-family: 'Libre Barcode 128 Text', Consolas;
+        text-align: center;
+        margin-bottom: 70px;
+        font-size: 5em;
+
+        @media (max-width: $grid-sm) {
+            margin: 50px 0;
+        }
+
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 100px;
+        @media (min-width: $grid-xl) {
+            //width: 33%;
+            //height: auto;
+            padding: 0 200px;
+        }
+    }
+
+    &__container-folder {
+        padding: 20px;
+        width: 400px;
+        height: auto;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: $grid-sm) {
+            width: 100%;
+            height: 80vh;
+        }
+        @media (min-width: $grid-xl) {
+            width: 33%;
+            height: auto;
+        }
+    }
+
+    &__folder {
+        position: relative;
+        //height: 100%;
+        //width: 100%;
+        //display: -webkit-box;
+        //display: -moz-box;
+        //display: -ms-flexbox;
+        //display: -webkit-flex;
+        //display: flex;
+        //justify-content: center;
+
+        @media (max-width: $grid-sm) {
+            width: 100%;
+            height: 100%;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (max-height: $grid-sm) {
+            width: 100%;
+            height: 100%;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__folder-coverimage {
+        width: 100%;
+
+        @media (max-width: $grid-sm) {
+            margin: auto 0;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    &__folder-title {
+        position: absolute;
+        font-family: 'Special Elite', Consolas;
+        font-size: 2em;
+        background-color: hsla(350,100%,20%,0.5);
+        padding: 20px;
+    }
+
+    &__folder-hover {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.5s;
+         &:hover {
+             opacity: 1;
+         }
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+}

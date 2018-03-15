@@ -7,6 +7,8 @@ import GitHub from '../components/GitHub'
 import Content from '../components/Content'
 import Footer from '../components/Footer'
 import Video from '../components/Video'
+import Gallery from '../components/Gallery'
+import PictureFolder from '../components/PictureFolder'
 
 Vue.use(Router);
 
@@ -21,7 +23,8 @@ export default new Router({
         github: GitHub,
         content: Content,
         footer: Footer,
-        video: Video
+        video: Video,
+        gallery: Gallery
       }
     },
     {
@@ -29,7 +32,7 @@ export default new Router({
       name: 'Contact',
       components: {contact: Contact}
     },
-      {
+    {
       path: '*',
       components: {
           default: Title,
@@ -39,6 +42,11 @@ export default new Router({
           footer: Footer,
           video: Video
       }
-      }
+    },
+    {
+      path: '/pics/:id',
+      name: 'Pics',
+      components: {default: PictureFolder}
+    }
   ]
 })

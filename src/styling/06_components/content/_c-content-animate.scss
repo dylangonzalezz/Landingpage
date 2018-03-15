@@ -23,7 +23,7 @@
 }
 
 .slidein-right {
-    opacity: 1;
+    opacity: 1 !important;
     transition: opacity 1s;
     animation: slide-in-right 1s ease-out forwards;
 
@@ -33,7 +33,7 @@
 }
 
 .slidein-left {
-    opacity: 1;
+    opacity: 1 !important;
     transition: opacity 1s;
     animation: slide-in-left 1s ease-out forwards;
 
