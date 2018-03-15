@@ -40,7 +40,8 @@ export default new Router({
           github: GitHub,
           content: Content,
           footer: Footer,
-          video: Video
+          video: Video,
+          gallery: Gallery
       }
     },
     {
