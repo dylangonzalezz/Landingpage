@@ -62,6 +62,13 @@
 
 <script>
     $(function() {
+        $('#image1').addClass('content__imagecontainer--no-opacity');
+        $('#image2').addClass('content__imagecontainer--no-opacity');
+        $('#image3').addClass('content__imagecontainer--no-opacity');
+        $('#image4').addClass('content__imagecontainer--no-opacity');
+    });
+
+    $(function() {
         $('#image1').waypoint(function() {
             $('#image1').addClass('slidein-right');
         }, {
