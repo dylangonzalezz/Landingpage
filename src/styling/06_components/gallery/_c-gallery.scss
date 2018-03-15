@@ -20,8 +20,6 @@
         justify-content: space-around;
         padding: 0 100px;
         @media (min-width: $grid-xl) {
-            //width: 33%;
-            //height: auto;
             padding: 0 200px;
         }
     }
@@ -50,14 +48,6 @@
 
     &__folder {
         position: relative;
-        //height: 100%;
-        //width: 100%;
-        //display: -webkit-box;
-        //display: -moz-box;
-        //display: -ms-flexbox;
-        //display: -webkit-flex;
-        //display: flex;
-        //justify-content: center;
 
         @media (max-width: $grid-sm) {
             width: 100%;
