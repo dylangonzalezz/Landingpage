@@ -21,13 +21,16 @@ export default new Router({
         menu: Menu,
         github: GitHub,
         content: Content,
+        contact: Contact,
         footer: Footer,
       }
     },
     {
       path: '/contact',
       name: 'Contact',
-      components: {contact: Contact}
+      components: {
+        contact: Contact
+      }
     },
     {
       path: '/portfolio',
@@ -43,6 +46,7 @@ export default new Router({
           menu: Menu,
           github: GitHub,
           content: Content,
+          contact: Contact,
           footer: Footer,
       }
     },
