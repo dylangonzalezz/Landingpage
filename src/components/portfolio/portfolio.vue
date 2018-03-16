@@ -4,6 +4,9 @@
         <h3 class="portfolio__subtitle">Portfolio</h3>
         <app-videos></app-videos>
         <app-gallery></app-gallery>
+        <router-link to="/">
+            <button class="picturefolder__close">+</button>
+        </router-link>
     </div>
 </template>
 <script>

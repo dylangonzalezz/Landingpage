@@ -10,6 +10,7 @@
       <router-view name="portfolio"></router-view>
       <router-view name="contact"></router-view>
     </transition>
+    <router-view name="portfolioAction"></router-view>
     <router-view name="footer"></router-view>
   </div>
 </template>

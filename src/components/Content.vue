@@ -51,8 +51,6 @@
                     <p class="content-typography__text content-typography__center">
                     Let's create some <b>AWESOME</b> videos together
                     </p>
-                    <br>
-                    <router-link to="contact"><p class="content-typography__buylink content-typography__center">Hit me up!!</p></router-link>
                 </div>
             </div>
         </div>

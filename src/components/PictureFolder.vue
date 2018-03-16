@@ -18,7 +18,7 @@
             <br>
             <p>You might have to reload D:</p>
         </div>
-        <router-link to="/">
+        <router-link to="/portfolio">
             <button class="picturefolder__close">+</button>
         </router-link>
         {{ createFolder() }}

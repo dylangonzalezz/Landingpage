@@ -1,0 +1,16 @@
+.portfolioAction {
+    margin-bottom: 40px;
+    background-color: #161616;
+    color: white;
+    padding: 70px 0;
+
+    &__description {
+        text-align: center;
+        margin-bottom: 70px;
+        font-size: 2em;
+    }
+
+    &__title {
+        font-size: 3em;
+    }
+}

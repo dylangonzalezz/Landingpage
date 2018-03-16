@@ -6,8 +6,9 @@ import Menu from '../components/Menu'
 import GitHub from '../components/GitHub'
 import Content from '../components/Content'
 import Footer from '../components/Footer'
-import Portfolio from '../components/portfolio/portfolio.vue'
+import Portfolio from '../components/portfolio/portfolio'
 import PictureFolder from '../components/PictureFolder'
+import PortfolioAction from '../components/main/portfolioAction'
 
 Vue.use(Router);
 
@@ -22,6 +23,7 @@ export default new Router({
         github: GitHub,
         content: Content,
         contact: Contact,
+        portfolioAction: PortfolioAction,
         footer: Footer,
       }
     },
@@ -47,6 +49,7 @@ export default new Router({
           github: GitHub,
           content: Content,
           contact: Contact,
+          portfolioAction: PortfolioAction,
           footer: Footer,
       }
     },
