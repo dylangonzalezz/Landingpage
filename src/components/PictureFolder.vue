@@ -67,17 +67,6 @@
                 }
                 this.folder = this.getImageFolder(id);
             },
-            loadClass: function () {
-                var folders = this.getImageFolders();
-
-                for (let i=0; i<=folders.length; i++) {
-                        $('#picturefolder' + i).waypoint(function () {
-                            $('#picturefolder' + i).addClass('slidein-bottom');
-                        }, {
-                            offset: '50%'
-                        });
-                }
-            }
         },
         mounted: function() {
             this.loadPictures();
@@ -86,12 +75,6 @@
             ...mapGetters([
                 'getFolders',
             ]),
-        },
-        created: function() {
-            $(document).ready(function(){
-                $(this).scrollTop(0);
-            });
-            this.loadPictures();
         },
     }
 </script>

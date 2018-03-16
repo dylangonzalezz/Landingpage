@@ -3,12 +3,12 @@
         <h2 class="gallery__title">Pics</h2>
         <div class="gallery__container">
             <div v-for="(folder, index) in getImageFolders()" class="gallery__container-folder">
-                <div v-on:click="goToPictures(index)" class="gallery__folder">
+                <router-link :to="goToPictures(index)" class="gallery__folder">
                     <div class="gallery__folder-hover">
                         <h2 class="gallery__folder-title">{{ folder.fields.title }}</h2>
                     </div>
                     <img :src="folder.fields.coverImage.fields.file.url" class="gallery__folder-coverimage">
-                </div>
+                </router-link>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@
             },
             goToPictures: function(index) {
                 index = index + 1;
-                this.$router.push("/pics/" + index);
+                return "/pics/" + index;
             }
         },
         computed: {
