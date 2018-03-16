@@ -8,12 +8,16 @@
             <div v-for="(image, index) in folder.fields.images">
                 <div class="picturefolder__image-container">
                     <div class="picturefolder__imagelayout">
-                        <img :src="image.fields.file.url" class="picturefolder__image">
+                        <img :src="image.fields.file.url" class="picturefolder__image" alt="Picture not Loaded">
                     </div>
                 </div>
             </div>
         </div>
-        <div v-else>loading...</div>
+        <div v-else>
+            <p>loading...</p>
+            <br>
+            <p>You might have to reload D:</p>
+        </div>
         <router-link to="/">
             <button class="picturefolder__close">+</button>
         </router-link>
