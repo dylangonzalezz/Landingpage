@@ -1,12 +1,12 @@
 <template>
   <div class="menu__container">
       <ul class="menu__navigation">
-          <router-link to="portfolio" rel="noopener">
+          <router-link to="/portfolio" rel="noopener">
               <li class="menu__button menu__button--contact" >
                   <img src="../assets/icons/portfolio.png" class="button__image button__image--contact"/><p class="button__text button__text--contact">Portfolio</p>
               </li>
           </router-link>
-          <router-link to="contact" rel="noopener">
+          <router-link to="/contact" rel="noopener">
               <li class="menu__button menu__button--contact" >
                   <img src="../assets/icons/contact.png" class="button__image button__image--contact"/><p class="button__text button__text--contact">Contact</p>
               </li>

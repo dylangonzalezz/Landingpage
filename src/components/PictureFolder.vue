@@ -63,7 +63,7 @@
                 this.folder = null;
 
                 if( id > imageFolders.length || id < 1 || isNaN(id)) {
-                    this.$router.push("/contact");
+                    this.$router.push("#");
                 }
                 this.folder = this.getImageFolder(id);
             },
