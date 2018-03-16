@@ -6,7 +6,7 @@ import Menu from '../components/Menu'
 import GitHub from '../components/GitHub'
 import Content from '../components/Content'
 import Footer from '../components/Footer'
-import Video from '../components/Video'
+import Videos from '../components/Videos'
 import Gallery from '../components/Gallery'
 import PictureFolder from '../components/PictureFolder'
 
@@ -23,7 +23,7 @@ export default new Router({
         github: GitHub,
         content: Content,
         footer: Footer,
-        video: Video,
+        video: Videos,
         gallery: Gallery
       }
     },
@@ -40,7 +40,7 @@ export default new Router({
           github: GitHub,
           content: Content,
           footer: Footer,
-          video: Video,
+          video: Videos,
           gallery: Gallery
       }
     },

@@ -5,37 +5,59 @@ import * as contentful from 'contentful';
 
 const state = {
     folders: [],
+    videos: [],
 };
 
 const getters = {
     getFolders(state) {
         return state.folders;
+    },
+    getVideos(state) {
+        return state.videos;
     }
 };
 
 const mutations = {
-    changeGithub: (state, getRequest) => {
-        state.githubLoading = true;
-        getRequest.then(function (response) {
-            state.githubName = response["data"]["login"];
-            state.githubAvatar = response["data"]["avatar_url"];
-            state.githubCompany = response["data"]["company"];
-            state.githubLocation = response["data"]["location"];
-            state.githubLoading = false;
-        }).catch(function (error) {
-            state.githubName = "Error :(";
-            state.githubAvatar = "Error ;C";
-            state.githubCompany = "Error D:";
-            state.githubLocation = "Error );";
-            state.githubLoading = false;
-        });
-    },
+    // changeGithub: (state, getRequest) => {
+    //     state.githubLoading = true;
+    //     getRequest.then(function (response) {
+    //         state.githubName = response["data"]["login"];
+    //         state.githubAvatar = response["data"]["avatar_url"];
+    //         state.githubCompany = response["data"]["company"];
+    //         state.githubLocation = response["data"]["location"];
+    //         state.githubLoading = false;
+    //     }).catch(function (error) {
+    //         state.githubName = "Error :(";
+    //         state.githubAvatar = "Error ;C";
+    //         state.githubCompany = "Error D:";
+    //         state.githubLocation = "Error );";
+    //         state.githubLoading = false;
+    //     });
+    // },
     mutationContentfulAllImageFolders: (state, getRequest) => {
         getRequest.then(function (response) {
             // console.log(response);
-            console.log(response.items[0].fields.imageFolders);
+            // console.log(response.items[0].fields.imageFolders);
             // state.folderCount = response.items[0].fields.imageFolders.length;
             state.folders = response;
+            // var i = 0;
+            // response.items[0].fields.imageFolders.forEach(function(folder) {
+            //     console.log(folder);
+            //     state.folders[i] = folder;
+            //     console.log(state.folders);
+            //     i++;
+            //     console.log(i);
+            // });
+        }).catch(function (error) {
+            console.log(error)
+        });
+    },
+    mutationContentfulAllVideos: (state, getRequest) => {
+        getRequest.then(function (response) {
+            // console.log(response);
+            // console.log(response.items[0].fields);
+            // state.folderCount = response.items[0].fields.imageFolders.length;
+            state.videos = response;
             // var i = 0;
             // response.items[0].fields.imageFolders.forEach(function(folder) {
             //     console.log(folder);
@@ -83,6 +105,15 @@ const actions = {
 
         var getRequest = client.getEntries({'content_type': 'allImageFolders'});
         commit('mutationContentfulAllImageFolders', getRequest);
+    },
+    allVideos({ commit }) {
+        const client = contentful.createClient({
+            space: 'ybwft7at3mdx',
+            accessToken: 'c41759da14bff5d7e10a35e6ce0efef9059e28ce225da680ce3807302fc46e2f'
+        });
+
+        var getRequest = client.getEntries({'content_type': 'allVideos'});
+        commit('mutationContentfulAllVideos', getRequest);
     }
 };
 
