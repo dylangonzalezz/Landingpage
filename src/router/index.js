@@ -6,8 +6,7 @@ import Menu from '../components/Menu'
 import GitHub from '../components/GitHub'
 import Content from '../components/Content'
 import Footer from '../components/Footer'
-import Videos from '../components/Videos'
-import Gallery from '../components/Gallery'
+import Portfolio from '../components/portfolio/portfolio.vue'
 import PictureFolder from '../components/PictureFolder'
 
 Vue.use(Router);
@@ -23,14 +22,19 @@ export default new Router({
         github: GitHub,
         content: Content,
         footer: Footer,
-        video: Videos,
-        gallery: Gallery
       }
     },
     {
       path: '/contact',
       name: 'Contact',
       components: {contact: Contact}
+    },
+    {
+      path: '/portfolio',
+      name: 'portfolio',
+      components: {
+        default: Portfolio
+      }
     },
     {
       path: '*',
@@ -40,14 +44,14 @@ export default new Router({
           github: GitHub,
           content: Content,
           footer: Footer,
-          video: Videos,
-          gallery: Gallery
       }
     },
     {
       path: '/pics/:id',
       name: 'Pics',
-      components: {default: PictureFolder}
+      components: {
+        default: PictureFolder
+      }
     }
   ]
 })

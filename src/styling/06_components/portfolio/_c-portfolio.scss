@@ -1,0 +1,19 @@
+.portfolio {
+
+    &__title {
+        font-family: 'Libre Barcode 128 Text', Consolas;
+        text-align: center;
+        margin-top: 70px;
+        font-size: 5em;
+
+        @media (max-width: $grid-sm) {
+            margin: 50px 0;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}

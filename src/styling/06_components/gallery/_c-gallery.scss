@@ -1,7 +1,6 @@
 .gallery {
-    margin-top: 100px;
+    //margin-top: 100px;
     height: 100vh;
-    margin-bottom: 100px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -24,7 +23,7 @@
         font-family: 'Libre Barcode 128 Text', Consolas;
         text-align: center;
         margin-bottom: 70px;
-        font-size: 5em;
+        font-size: 4em;
 
         @media (max-width: $grid-sm) {
             margin: 50px 0;

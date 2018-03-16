@@ -1,14 +1,13 @@
 <template>
   <div id="app">
     <transition appear name="slide" mode="out-in">
-    <router-view></router-view>
+      <router-view></router-view>
     </transition>
     <router-view name="menu"></router-view>
     <router-view name="content"></router-view>
-    <router-view name="video"></router-view>
-    <router-view name="gallery"></router-view>
     <router-view name="github"></router-view>
     <transition appear name="slide" mode="out-in">
+      <router-view name="portfolio"></router-view>
       <router-view name="contact"></router-view>
       <router-view name="footer"></router-view>
     </transition>
