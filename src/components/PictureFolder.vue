@@ -1,9 +1,15 @@
 <template>
     <div class="picturefolder">
-        <div v-if="folder != null">
+        {{ createFolder() }}
+        <div v-if="!folder">
+            <p>loading...</p>
+            <br>
+            <p>You might have to reload D:</p>
+        </div>
+        <div v-else>
             <div class="picturefolder__container-title">
-                <h1 class="picturefolder__title">{{ folder.fields.title }}</h1>
-                <p class="picturefolder__subtitle">{{ folder.fields.description }}</p>
+                <h1 class="picturefolder__title" v-text="folder.fields.title"></h1>
+                <p class="picturefolder__subtitle" v-text="folder.fields.description"></p>
             </div>
             <div v-for="(image, index) in folder.fields.images">
                 <div class="picturefolder__image-container">
@@ -13,15 +19,9 @@
                 </div>
             </div>
         </div>
-        <div v-else>
-            <p>loading...</p>
-            <br>
-            <p>You might have to reload D:</p>
-        </div>
         <router-link to="/portfolio">
             <button class="picturefolder__close">+</button>
         </router-link>
-        {{ createFolder() }}
     </div>
 </template>
 
@@ -39,12 +39,6 @@
         methods: {
             loadPictures: function() {
                 this.$store.dispatch('allImageFolders');
-            },
-            getImageFolders: function() {
-                if( this.$store.getters.getFolders.items ) {
-                    return this.$store.getters.getFolders.items[0].fields.imageFolders;
-                }
-                return "Nope"
             },
             getImageFolder: function(id) {
                 if( this.$store.getters.getFolders.items || isNan(id)) {
