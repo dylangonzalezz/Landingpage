@@ -1,12 +1,12 @@
 <template>
     <div class="picturefolder">
         {{ createFolder() }}
-        <div v-if="!folder">
-            <p>loading...</p>
-            <br>
-            <p>You might have to reload D:</p>
-        </div>
-        <div v-else>
+        <!--<div v-if="!folder">-->
+            <!--<p>loading...</p>-->
+            <!--<br>-->
+            <!--<p>You might have to reload D:</p>-->
+        <!--</div>-->
+        <!--<div v-else>-->
             <div class="picturefolder__container-title">
                 <h1 class="picturefolder__title" v-text="folder.fields.title"></h1>
                 <p class="picturefolder__subtitle" v-text="folder.fields.description"></p>
@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        <!--</div>-->
         <router-link to="/portfolio">
             <button class="picturefolder__close">+</button>
         </router-link>
