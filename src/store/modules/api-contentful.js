@@ -73,30 +73,30 @@ const mutations = {
 };
 
 const actions = {
-    contentfulAllImageFolders({ commit }) {
-        var client = contentful.createClient({
-            space: 'ybwft7at3mdx',
-            accessToken: 'c41759da14bff5d7e10a35e6ce0efef9059e28ce225da680ce3807302fc46e2f'
-        });
-        // var getRequest = client.getContentType("allImageFolders");
-        var getRequest = client.getEntries({'content_type': 'allImageFolders'});
-        // var getRequest = client.getContent();
-        // commit('mutationContentfulAllImageFolders', getRequest);
-        getRequest.then(function (response) {
-            // console.log(response);
-            // console.log(response.items[0].fields.imageFolders);
-            // state.folderCount = response.items[0].fields.imageFolders.length;
-            var i = 0;
-            response.items[0].fields.imageFolders.forEach(function(folder) {
-                state.folders[i] = folder;
-                console.log(state.folders);
-                i++;
-            });
-        }).catch(function (error) {
-            console.log(error);
-            state.folders = "error";
-        });
-    },
+    // contentfulAllImageFolders({ commit }) {
+    //     var client = contentful.createClient({
+    //         space: 'ybwft7at3mdx',
+    //         accessToken: 'c41759da14bff5d7e10a35e6ce0efef9059e28ce225da680ce3807302fc46e2f'
+    //     });
+    //     // var getRequest = client.getContentType("allImageFolders");
+    //     var getRequest = client.getEntries({'content_type': 'allImageFolders'});
+    //     // var getRequest = client.getContent();
+    //     // commit('mutationContentfulAllImageFolders', getRequest);
+    //     getRequest.then(function (response) {
+    //         // console.log(response);
+    //         // console.log(response.items[0].fields.imageFolders);
+    //         // state.folderCount = response.items[0].fields.imageFolders.length;
+    //         var i = 0;
+    //         response.items[0].fields.imageFolders.forEach(function(folder) {
+    //             state.folders[i] = folder;
+    //             console.log(state.folders);
+    //             i++;
+    //         });
+    //     }).catch(function (error) {
+    //         console.log(error);
+    //         state.folders = "error";
+    //     });
+    // },
     allImageFolders({ commit }) {
         const client = contentful.createClient({
             space: 'ybwft7at3mdx',

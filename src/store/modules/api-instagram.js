@@ -38,7 +38,7 @@ const actions = {
             limit:1,
             resolution:"standard_resolution",
             userId:231412545,
-            accessToken:"231412545.177843c.436e3207739d4e2781f5d663578cae31",
+            accessToken:"231412545.177843c.819e5e902fd34a92adc08c22668a8f47",
             template: methods.createTemplate(),
             target: state.instafeedid1,
         });
@@ -48,7 +48,7 @@ const actions = {
             sortBy: 'least-recent',
             resolution:"standard_resolution",
             userId:231412545,
-            accessToken:"231412545.177843c.436e3207739d4e2781f5d663578cae31",
+            accessToken:"231412545.177843c.819e5e902fd34a92adc08c22668a8f47",
             template: methods.createTemplate(),
             target: state.instafeedid2,
         });
@@ -58,7 +58,7 @@ const actions = {
             sortBy: 'least-recent',
             resolution:"standard_resolution",
             userId:231412545,
-            accessToken:"231412545.177843c.436e3207739d4e2781f5d663578cae31",
+            accessToken:"231412545.177843c.819e5e902fd34a92adc08c22668a8f47",
             template: methods.createTemplate(),
             target: state.instafeedid3,
         });
@@ -68,7 +68,7 @@ const actions = {
             sortBy: 'least-recent',
             resolution:"standard_resolution",
             userId:231412545,
-            accessToken:"231412545.177843c.436e3207739d4e2781f5d663578cae31",
+            accessToken:"231412545.177843c.819e5e902fd34a92adc08c22668a8f47",
             template: methods.createTemplate(),
             target: state.instafeedid4,
         });
