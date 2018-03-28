@@ -20,11 +20,10 @@
                         My name is Dylan Gonzalez.
                     </p>
                     <p class="content-typography__text">
-                        Im a <b>Videographer</b>/ <b>Webdeveloper</b> based in switzerland.
+                        Im a <b>Videographer</b> based in switzerland.
                         Nice to meet you :D
                     </p>
                     <br>
-                    <p class="content-typography__text">You can check out some more of my stuff </p><a class="content-typography__link" rel="noopener" href="https://www.youtube.com/channel/UCJgzDLBduIim8h-6-_fS8YA/videos">here</a>
                 </div>
             </div>
         </div>
@@ -49,7 +48,7 @@
             <div class="content__textcontainer">
                 <div class="content__text">
                     <p class="content-typography__text content-typography__center">
-                    Let's create some <b>AWESOME</b> videos together
+                    So let's create some <b>AWESOME</b> videos together
                     </p>
                 </div>
             </div>
