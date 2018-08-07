@@ -7,7 +7,7 @@
                 <input type="Email" class="contactform__input" placeholder="Email" name="_replyto">
             </div>
             <div class="contactform__formgroup">
-                <textarea class="contactform__input contactform__input--textarea" placeholder="Message"></textarea>
+                <textarea class="contactform__input contactform__input--textarea" placeholder="Message" name="message"></textarea>
             </div>
             <input class="contactform__button--submit" type="submit" value="Fire Away">
         </form>
