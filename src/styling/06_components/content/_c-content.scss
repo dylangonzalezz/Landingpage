@@ -73,8 +73,10 @@
     }
 
     &__imagelayout {
-        height: auto;
-        width: auto;
+      position: relative;
+        height: 300px;
+        width: 100%;
+        min-height: 50vh;
         background-color: #FFFFFF;
         position: absolute;
         left: 50%;
@@ -107,9 +109,12 @@
     }
 
     &__image {
-        height: auto;
+        height: 100%;
+        width: 100%;
         max-width: 50vw;
         max-height: 100%;
+        background-size: cover;
+
 
         @media (max-width: $grid-sm) {
             width: 100%;
@@ -140,4 +145,22 @@
             padding: 10px;
         }
     }
+}
+
+#content__image1 {
+  background-image: url("../assets/ContentMedia/pic1.jpg");
+}
+
+#content__image2 {
+  background-image: url("../assets/ContentMedia/pic2.jpg");
+}
+
+
+#content__image3 {
+  background-image: url("../assets/ContentMedia/pic3.jpg");
+}
+
+
+#content__image4 {
+  background-image: url("../assets/ContentMedia/pic4.jpg");
 }
